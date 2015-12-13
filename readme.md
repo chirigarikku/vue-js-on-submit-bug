@@ -1,5 +1,5 @@
 # vue-js-on-submit-bug
-A replication of on-submit *bug*.
+A replication of on-submit *bug*. [Demo](https://srph-playground.github.io/vue-js-on-submit-bug)
 
 ### Elaboration
 Clicking "enter" on an input (this triggers the `on:submit` event) does not remove the data from the input, while clicking the `submit` button does.
