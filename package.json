@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -v -d  --display-errors",
-    "watch": "webpack -v -d -w --display-errors"
+    "build": "./node_modules/.bin/webpack -v -d  --display-errors",
+    "watch": "./node_modules/.bin/webpack -v -d -w --display-errors"
   },
   "repository": {
     "type": "git",
