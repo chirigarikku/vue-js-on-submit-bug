@@ -6,6 +6,6 @@ Clicking "enter" on an input (this triggers the `on:submit` event) does not remo
 ![preview](preview.gif)
 
 ### Note
-Hello, I wrote this while being awake for around 18 hours (because Vue suddenly caused an *itch*). That said, I did a lot of patterns which I did not understand yet.
+Hello, I wrote this while being awake for around 18 hours (because Vue suddenly caused an *itch*). That said, I did a lot of patterns which I did not understand.
 
 Feel free to point them out.
