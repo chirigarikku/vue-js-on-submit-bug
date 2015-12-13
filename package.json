@@ -1,0 +1,31 @@
+{
+  "name": "vue-js-list-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -v -d  --display-errors",
+    "watch": "webpack -v -d -w --display-errors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srph-playground/vue-js-list-app.git"
+  },
+  "author": "Kier Borromeo <seraphipod@gmail.com> (http://srph.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srph-playground/vue-js-list-app/issues"
+  },
+  "homepage": "https://github.com/srph-playground/vue-js-list-app#readme",
+  "dependencies": {
+    "vue": "^1.0.11"
+  },
+  "devDependencies": {
+    "babel": "^6.3.13",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "webpack": "^1.12.9"
+  }
+}

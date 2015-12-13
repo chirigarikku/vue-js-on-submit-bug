@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vue.js List App</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="app">
+    <div v-if="isCreating">
+      <form v-on:submit.prevent="storeTask(isCreatingForm)">
+        <div>
+          <input type="text" name="label" v-model="isCreatingForm.label" />
+        </div>
+
+        <button type="submit">Create Task</button>
+        <button type="button" v-on:click="cancelCreateTask()">Cancel</button>
+      </form>
+    </div>
+
+    <div v-if="visibleTasks.length">
+      <button type="button" v-on:click="createTask()" v-if="!isCreating">
+        New task
+      </button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr v-for="task in visibleTasks">
+            <td>
+              <div v-if="!task.isEditing">{{ task.label }}</div>
+              <div v-else>
+                <form v-on:submit.prevent.stop="updateTask(task.id, isEditingForm)">
+                  <input type="text" name="label" v-model="isEditingForm.label" />
+
+                  <button type="submit">
+                    Update
+                  </button>
+
+                  <button type="button" v-on:click="cancelEditTask(task.id)">
+                    Cancel
+                  </button>
+                </form>
+              </div>
+            </td>
+            <td>
+              <button type="button" v-on:click="editTask(task.id)">Edit</button>
+              <button type="button" v-on:click="archiveTask(task.id)">Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div v-if="!visibleTasks.length && !isCreating">
+      No tasks yet. <button type="button" v-on:click="createTask()">Create my first task</button>
+    </div>
+
+    <div v-if="archivedTasks.length">
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr v-for="task in visibleTasks">
+            <td>
+              {{ task.label }}
+            </td>
+            <td>
+              <button type="button" v-on:click="restoreTask(task.id)">Restore</button>
+              <button type="button" v-on:click="removeTask(task.id)">Remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="build.js"></script>
+</body>
+</html>
