@@ -2,5 +2,3 @@
 node_modules
 Thumbs.db
 .DS_Store
-build.js
-build.js.*
