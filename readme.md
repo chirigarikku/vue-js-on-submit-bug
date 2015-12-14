@@ -21,17 +21,13 @@ The input only becomes empty when I click the click the "create" button. When I 
 
 ### Replicating
 
-1.) Click on the "create a new task" button
-2.) Fill the input with characters (anything)
-3.) Press the enter key.
-4.) Click "create a new task" button, you should be able to see the input filled with the last value you filled it with (broken; unintended).
-4.) Repeat steps 1-2.
-5.) This time, click the "create" button.
-6.) Click "create a new task" button, you should be able to see an empty input (actual; expected). 
-
------
-
-Thanks for the response! If any clarification needs to be made, please feel free to ask.
+1. Click on the "create a new task" button
+2. Fill the input with characters (anything)
+3. Press the enter key.
+4. Click "create a new task" button, you should be able to see the input filled with the last value you filled it with (broken; unintended).
+5. Repeat steps 1-2.
+6. This time, click the "create" button.
+7. Click "create a new task" button, you should be able to see an empty input (actual; expected). 
 
 ### Running
 ```bash
