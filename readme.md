@@ -4,7 +4,7 @@ A replication of on-submit *bug*. [Demo](https://srph-playground.github.io/vue-j
 ### Track 
 Track https://github.com/vuejs/vue/issues/2017.
 
-**Update**: https://github.com/vuejs/vue/commit/0efdd8080721b5288f086b8c7d6bd8bce4f4af5a fixes this. Thanks to [yyx990803](https://github.com/yyx990803).
+**Update**: [0efdd80](https://github.com/vuejs/vue/commit/0efdd8080721b5288f086b8c7d6bd8bce4f4af5a) fixes this. Thanks to [yyx990803](https://github.com/yyx990803).
 
 ### Elaboration
 Clicking "enter" on an input (this triggers the `on:submit` event) does not remove the data from the input, while clicking the `submit` button does.
